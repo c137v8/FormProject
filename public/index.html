@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-
 <html>
 <head>
   <title>Student Registration Form</title>
@@ -28,62 +26,55 @@
   </style>
 </head>
 <body>
-
-
-
-
   <h2 style="text-align:center;">Student Registration Form Using Table in HTML</h2>
   <form action="/submit" method="POST">
     <table align="center">
       <tr>
         <td>First Name</td>
-        <td><input type="text" name="firstName" maxlength="50"> (Max 50 Characters Allowed)</td>
+        <td><input type="text" name="firstName" maxlength="50" required> (Max 50 Characters)</td>
       </tr>
       <tr>
         <td>Last Name</td>
-        <td><input type="text" name="lastName" maxlength="50"> (Max 50 Characters Allowed)</td>
+        <td><input type="text" name="lastName" maxlength="50" required> (Max 50 Characters)</td>
       </tr>
       <tr>
         <td>Email ID</td>
-        <td><input type="email" name="email"></td>
+        <td><input type="email" name="email" maxlength="50" required></td>
       </tr>
       <tr>
         <td>Mobile Number</td>
-        <td><input type="text" name="mobile" maxlength="10"> (10 Digits Allowed)</td>
+        <td><input type="text" name="mobile" maxlength="10" pattern="\d{10}" required> (10 Digits Only)</td>
       </tr>
       <tr>
         <td>Gender</td>
         <td>
-          <input type="radio" name="gender" value="Male">Male
+          <input type="radio" name="gender" value="Male" required>Male
           <input type="radio" name="gender" value="Female">Female
         </td>
       </tr>
       <tr>
         <td>Date of Birth</td>
-        <td>
-          Date: <input type="date" name="dob" >
-          
-        </td>
+        <td><input type="date" name="dob" required></td>
       </tr>
       <tr>
         <td>Address</td>
-        <td><textarea name="address" rows="4" cols="30"></textarea></td>
+        <td><textarea name="address" rows="4" cols="30" maxlength="50" required></textarea></td>
       </tr>
       <tr>
         <td>City</td>
-        <td><input type="text" name="city" maxlength="50"></td>
+        <td><input type="text" name="city" maxlength="50" required></td>
       </tr>
       <tr>
         <td>Pin Code</td>
-        <td><input type="text" name="pin" maxlength="6"> (Max 6 Numbers Allowed)</td>
+        <td><input type="text" name="pin" maxlength="6" pattern="\d{6}" required> (6 Digits)</td>
       </tr>
       <tr>
         <td>State</td>
-        <td><input type="text" name="state" maxlength="50"></td>
+        <td><input type="text" name="state" maxlength="50" required></td>
       </tr>
       <tr>
         <td>Country</td>
-        <td><input type="text" name="country" maxlength="50"></td>
+        <td><input type="text" name="country" maxlength="50" required></td>
       </tr>
       <tr>
         <td>Hobbies</td>
@@ -91,25 +82,24 @@
           <input type="checkbox" name="hobbies" value="Drawing">Drawing
           <input type="checkbox" name="hobbies" value="Singing">Singing
           <input type="checkbox" name="hobbies" value="Dancing">Dancing
-          <input type="checkbox" name="hobbies" value="Sketching">Sketching
-          <br>
-          Others: <input type="text" name="hobbiesOther" maxlength="50"> (Max 50 Characters Allowed)
+          <input type="checkbox" name="hobbies" value="Sketching">Sketching<br>
+          Others: <input type="text" name="hobbiesOther" maxlength="50">
         </td>
       </tr>
       <tr>
         <td>Qualification</td>
         <td>
-          <input type="checkbox" name="qualification" value="10th">High School (10th)<br>
-          <input type="checkbox" name="qualification" value="12th">Higher School (12th)<br>
-          <input type="checkbox" name="qualification" value="Bachelors">Graduation (Bachelors)<br>
-          <input type="checkbox" name="qualification" value="Masters">Post Graduation (Masters)<br>
+          <input type="checkbox" name="qualification" value="10th">10th<br>
+          <input type="checkbox" name="qualification" value="12th">12th<br>
+          <input type="checkbox" name="qualification" value="Bachelors">Bachelors<br>
+          <input type="checkbox" name="qualification" value="Masters">Masters<br>
           <input type="checkbox" name="qualification" value="PhD">PhD
         </td>
       </tr>
       <tr>
         <td>Courses Applied For</td>
         <td>
-          <input type="radio" name="course" value="BCA">BCA<br>
+          <input type="radio" name="course" value="BCA" required>BCA<br>
           <input type="radio" name="course" value="BCom">B.Com<br>
           <input type="radio" name="course" value="BSc">B.Sc<br>
           <input type="radio" name="course" value="BA">BA<br>
@@ -127,6 +117,5 @@
       </tr>
     </table>
   </form>
-
 </body>
 </html>
