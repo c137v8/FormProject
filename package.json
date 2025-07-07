@@ -1,0 +1,23 @@
+{
+  "name": "formproject",
+  "version": "1.0.0",
+  "description": "Project for IWT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c137v8/FormProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c137v8/FormProject/issues"
+  },
+  "homepage": "https://github.com/c137v8/FormProject#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
